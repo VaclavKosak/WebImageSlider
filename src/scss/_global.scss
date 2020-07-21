@@ -1,0 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.section {
+  &__container {
+    width: 1200px;
+    margin: auto;
+    @media (max-width: 1250px) {
+      width: 100%;
+    }
+  }
+}

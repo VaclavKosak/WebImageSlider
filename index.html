@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/layout-main.css" />
+</head>
+<body>
+<section class="section section__container">
+    <div class="slider">
+        <div class="slider__items">
+            <img class="slider__items__img" src="src/img/one.png" alt="">
+            <img class="slider__items__img" src="src/img/two.png" alt="">
+            <img class="slider__items__img" src="src/img/three.png" alt="">
+            <img class="slider__items__img" src="src/img/four.png" alt="">
+            <img class="slider__items__img" src="src/img/five.png" alt="">
+        </div>
+        <button class="slider__button slider__button--left"><svg class="slider__button__svg" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>
+        <button class="slider__button slider__button--right"><svg class="slider__button__svg" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>
+    </div>
+</section>
+
+<script src="js/web-bundle.js"></script>
+<script>
+
+    document.addEventListener("DOMContentLoaded", () => { new Web.SliderController(); });</script>
+
+</body>
+</html>
